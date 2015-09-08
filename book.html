@@ -19,7 +19,7 @@
 			//呼叫prompt給訪客輸入問題
 			//再將訪客的回答儲存到參數 q (question)
 			//Answer儲存true及false，用來判斷訪客的答案是正確還是錯誤
-			var q = prompt("修練此書必須揮劍自宮，你是否仍要修練?(Y/N)","");
+			var q1 = prompt("修練此書必須揮劍自宮，你是否仍要修練?(Y/N)","");
 			var Answer = true;
 			//Achievement 為"成就"，答對小測驗才能啟動此參數
 			var Achievement;
@@ -28,8 +28,8 @@
 				//q 為剛才呼叫prompt給訪客回答問題的視窗
 				//如果q符合條件，Answer會儲存true
 				//如果q不符合條件，Answer會儲存false
-				if (q == "Y") {
-					Answer = true;			
+				if (q1 == "Y") {			
+					//Answer = true;			
 				} else {
 					Answer = false;
 				}
