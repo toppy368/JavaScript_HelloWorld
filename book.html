@@ -1,0 +1,51 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<!--網站標題-->
+	<title>葵花寶典 - JavaScript Game</title>
+		<!--以javascript顯示"Hello World"字樣-->
+		<script language="javascript">
+			alert("Hello World ! javascript語法運作正常");
+		</script>
+</head>
+<body>
+	<h1>歡迎進入 葵花寶典的世界 (分支)</h1><p />
+	<!--給訪客的提示說明，說明本專案有JavaScript語法，需開啟此功能才可以運作-->
+	<h3>專案說明</h3><p />
+	歡迎進入本專案首頁，因為本專案主要是示範JavaScript語法，因此如果您想查看本專案的JavaScript效果，請將瀏覽器的JavaScript功能開啟，謝謝 ! <p />
+	<!--說明本專案為GNU v2授權，及授權條約位置-->
+	本專案採GNU v2 授權，詳情請參見專案資料夾LICESE.txt檔<p />
+		<!--增加javascript區域-->
+		<script language="javascript">
+			//以alert提示即將驗證問答
+			alert("即將進行驗證問答小測驗，作答正確可獲得成就");
+
+			//呼叫prompt給訪客輸入問題
+			//再將訪客的回答儲存到參數 q (question)
+			//Answer儲存true及false，用來判斷訪客的答案是正確還是錯誤
+			var q = prompt("請問英文字母中，A~Z共有幾個字母 ? (不分大小寫，請打數字)","");
+			var Answer = true;
+			//Achievement 為"成就"，答對小測驗才能啟動此參數
+			var Achievement;
+
+				//if...else區域，用來判定答案與否(但不會顯示alert訊息)
+				//q 為剛才呼叫prompt給訪客回答問題的視窗
+				//如果q符合條件，Answer會儲存true
+				//如果q不符合條件，Answer會儲存false
+				if (q == 26) {
+					Answer = true;			
+				} else {
+					Answer = false;
+				}
+				//if...else區域，用來判斷Answer的結果
+				//Answer的值為true或false，會影響接下來alert顯示的結果
+				//答對者可獲得成就(Achievement參數)
+				if (Answer == true) {
+					alert("正確答案 O");
+					Achievement = alert("獲得成就：通過小測驗(蓋章)");
+				} else {
+					alert("錯誤答案 X");
+				}
+		</script>
+</body>
+</html>
