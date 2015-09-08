@@ -19,7 +19,7 @@
 			//呼叫prompt給訪客輸入問題
 			//再將訪客的回答儲存到參數 q (question)
 			//Answer儲存true及false，用來判斷訪客的答案是正確還是錯誤
-			var q1 = prompt("欲練神功，必先自宮。(Y/N)","");
+			var q1 = prompt("第一頁：欲練神功，必先自宮。(Y/N)","");
 			var q2 = prompt("雖然自宮，未必成功。(Y/N)","");
 			var Answer = true;
 			//Achievement 為"成就"，答對小測驗才能啟動此參數
@@ -38,8 +38,8 @@
 				//Answer的值為true或false，會影響接下來alert顯示的結果
 				//答對者可獲得成就(Achievement參數)
 				if (Answer == true) {
-					alert("如不自宮，也可成功。");
-					alert("雖然自宮，未必成功。");
+					alert("第二頁：如不自宮，也可成功。");
+					alert("第三頁：雖然自宮，未必成功。");
 				} else {
 					alert("");
 				}
